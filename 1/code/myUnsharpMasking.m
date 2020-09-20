@@ -7,7 +7,7 @@ function [imageSharp] = myUnsharpMasking(path)
 	kernel = [0 1 0; 1 -4 1; 0 1 0];
 	identity = [0 0 0; 0 1 0; 0 0 0]; 
 
-	for c = 1:0.5:3
+	for c = 1:0.5:10
 		mat = (identity - c * kernel);
 		imageSharp = convImage(imageOrig, mat);
 		count = count + 1;
