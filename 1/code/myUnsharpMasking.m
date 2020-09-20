@@ -11,8 +11,7 @@ function [imageSharp] = myUnsharpMasking(path)
 		mat = (identity - c * kernel);
 		imageSharp = convImage(imageOrig, mat);
 		count = count + 1;
-		msg = "Sharpened Image for weight = " + c
-		imwrite(imageSharp, "../images/$" + c + ".png")
+		msg = "Sharpened Image for weight = " + c;
 
 		%% plotting two images side by side
 		figure(count)

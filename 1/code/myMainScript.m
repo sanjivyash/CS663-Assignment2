@@ -2,5 +2,6 @@
 
 tic;
 %% Your code here
-imageSharp = myUnsharpMasking("../data/lionCrop.mat");
+lionCrop = myUnsharpMasking("../data/lionCrop.mat");
+superMoonCrop = myUnsharpMasking("../data/superMoonCrop.mat");
 toc;
