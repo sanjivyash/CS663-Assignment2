@@ -68,7 +68,7 @@ function barbara(img)
     img=img/255;
     [m, n] = size(img);
     count=6;
-    noisyImg = img + (max(img(:)) - min(img(:)))*5/100;
+    noisyImg = img + randn([m,n])*(max(img(:)) - min(img(:)))*5/100;
     W = 20; %Window parameter, usually be chose to 5*sigma_s
     msg=" For Barbara Optimal sigma_s is 0.9 and Optimal sigma_i is 0.05" 
     for sigma_s= [0.9, 0.81, 0.99]
