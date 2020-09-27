@@ -42,7 +42,7 @@ function grass(img)
                 count=count+1;
                 %Plotting and writing the Filtered image
                 RMSD = 1/m*(sqrt(sum((img-filteredImg).^2, 'all')));
-                msg= "RMSD for Grass for sigma_s " + sigma_s + "sigma_i " + sigma_i + "is " + RMSD
+                msg= "RMSD for Grass for sigma_s = " + sigma_s + " sigma_i = " + sigma_i + " is " + RMSD
                 imwrite(filteredImg, "../images/grass$" + sigma_s +"$$" +sigma_i+ ".png")
                 figure(count)
                 title("RMSD = "+ RMSD)
@@ -98,7 +98,7 @@ function barbara(img)
                 count=count+1;
                 %Plotting and writing the Filtered image
                 RMSD = 1/m*(sqrt(sum((img-filteredImg).^2, 'all')));
-                msg= "RMSD for Barbara for sigma_s " + sigma_s + "sigma_i " + sigma_i + "is " + RMSD
+                msg= "RMSD for Barbara for sigma_s = " + sigma_s + " sigma_i = " + sigma_i + " is " + RMSD
                 imwrite(filteredImg, "../images/barbara$" + sigma_s +"$$" +sigma_i+ ".png")
                 figure(count)
                 title("RMSD = "+ RMSD)
@@ -153,7 +153,7 @@ function honey(img)
                 count=count+1;
                 %Plotting and writing the Filtered image
                 RMSD = 1/m*(sqrt(sum((img-filteredImg).^2, 'all')));
-                msg= "RMSD for HoneyComb for sigma_s " + sigma_s + "sigma_i " + sigma_i + "is " + RMSD
+                msg= "RMSD for HoneyComb for sigma_s = " + sigma_s + " sigma_i = " + sigma_i + " is " + RMSD
                 imwrite(filteredImg, "../images/honeycomb$" + sigma_s +"$$" +sigma_i+ ".png")
                 figure(count)
                 title("RMSD = "+ RMSD)
