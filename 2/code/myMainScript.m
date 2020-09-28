@@ -9,6 +9,6 @@ img = imread('../data/grass.png');
 load("../data/barbara.mat", "imageOrig");
 img3 = imread('../data/honeyCombReal.png');
 myBilateralFilter(img, str);
-myBilateralFilter(imageOrig, str2);
+myBilateralFilter(imageOrig, "barbara");
 myBilateralFilter(img3, str3);
 toc;
